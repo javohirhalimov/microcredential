@@ -1,0 +1,1908 @@
+*{box-sizing: border-box;}
+body{
+  background-color: var(--primaryColor);
+}
+html{scroll-behavior: smooth;}
+
+:root{
+  --primaryColor: #7395AE;
+  --secondaryColor: darkgray;
+}
+
+.topNav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topNav a:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+.topNav a.active{
+  background-color: grey;
+  color: white;
+}
+
+.topNav .icon{
+  display: none;
+}
+
+.topNav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.shoppingCartImg{
+  position: relative;
+  left: 57%;
+  top: 12%;
+  height: 40px;
+}
+
+.numItem{
+  position: relative;
+  font-size: italic;
+  top: -5px;
+  font-size: 2em;
+  color: white;
+}
+
+.headerAnimation{
+  width:80%;
+  height: 350px;
+  margin-left: 8%;
+  margin-right: auto;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.storeLabelImg{
+  width: 10%;
+  height: auto;
+  margin-left: 0%;
+  border-radius: 10%;
+  margin-bottom: 3%;
+  position: absolute;
+  margin-top: 1%;
+  animation: zoomLabel 3s 1;
+
+}
+
+.storeName{
+font-family: 'Luxurious Roman', cursive;
+font-size: 2.5em;
+  color: #2b2a2b;
+display: inline-block;
+ margin-left: 15%;
+  margin-bottom: 0;
+  margin-top: 0;
+  animation: storeNameAnimation 3s 1;
+}
+
+.tajStyle, .quoteSource{
+font-family: 'Abril Fatface', cursive;
+color: #f2c506;
+font-size: 1.4em;
+}
+
+.quote{
+  display: inline-block;
+  font-size: 1.7em;
+  color: #5d5c61;
+  font-family: 'Dancing Script', cursive;
+  margin-left: 17%;
+  margin-top: 5px;
+  animation: quoteNameAnimation 3s 1;
+}
+
+.quoteSource{
+font-size: 1em;
+}
+
+.slideshow{
+  margin-top: 2.5%;
+  width: 85%;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  text-align: center;
+}
+.slide-wrapper{
+  width: 300%;
+  height: 100%;
+  animation: slideshow 10s infinite;
+}
+.slide{
+  width: 33.33%;
+  height: 100%;
+  float: left;
+  padding-top: 5px;
+  text-align: center;
+
+  /* animation: slideshow4 15s infinite; */
+}
+
+.slide:nth-child(1){
+  color:#2d2d2d;
+  background-color: #2a363b;
+  font-size: 1.2em;
+  color: white;
+}
+
+.slide:nth-child(2){
+color:#ffffff;
+background-color: olive;
+}
+
+.slide:nth-child(3){
+padding-top: 12px;
+color:#b1a296;
+background-color: #5d5c61;
+font-size: 1.2em;
+}
+
+.promotionBigFont{
+
+}
+
+.freeShippingFont{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.2em;
+  text-shadow: 10px 0px 19px black;
+}
+
+.code{
+  font-style: italic;
+  font-weight: 100;
+}
+
+.offPrice{
+  font-weight: 900;
+  color: white;
+  font-size: 1.5em;
+  text-shadow: 10px 0px 25px white;
+
+}
+
+.promotionBigFont{
+  color: white;
+  font-size: 1.1em;
+  text-shadow: 10px 0px 25px white;
+}
+
+@keyframes slideshow {
+  0%{margin-left: 0%;}
+  30%{margin-left: 0%;}
+    35%{margin-left: -100%;}
+    65%{margin-left: -100%;}
+      70%{margin-left: -200%;}
+      95%{margin-left: -200%;}}
+
+
+@keyframes zoomLabel {
+  0%{transform: scale(0.2);}
+    30%{transform: scale(0.7);}
+      50%{transform: scale(1.1);}
+        80%{ transform: scale(1.35);}
+          100%{transform: scale(1);}
+}
+
+
+@keyframes storeNameAnimation {
+  from{transform: translateY(0px);}
+  to{transform: translateY(70px);}
+}
+
+@keyframes quoteNameAnimation {
+  from{transform: translateY(0px);}
+  to{transform: translateY(-75px);}
+}
+
+.containerImg{
+  position: relative;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mainImg1{
+  width: 92%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  filter: brightness(95%);
+}
+
+.mainImg2{
+  position: relative;
+  margin-top: 2%;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  filter: blur(1px);
+  filter: brightness(60%);
+}
+
+.imgText1{
+  top: 7%;
+  left: 47%;
+  width: 50%;
+  height: 22%;
+  color: white;
+  padding: -15px;
+  position: absolute;
+  font-family: cursive;
+  font-size: 2.1em;
+}
+
+
+.imgText2{
+  top: 25%;
+  left: 50%;
+  width: 35%;
+  height: 13%;
+  color: white;
+  position: absolute;
+  font-family: cursive;
+  font-size: 1em;
+  /* background-color: rgba(63, 70, 82,0); */
+  border: 1px solid grey;
+  background-color: rgba(63, 70, 82, 0.51);
+}
+
+.smallTitel{
+  padding-left: 7.5%;
+  font-family: 'Abril Fatface', cursive;
+  color: #f2c506;
+  font-size: 1.3em;
+  margin-top: 3%;
+}
+
+hr{
+  margin-top: 1%;
+  width: 85%;
+  padding-bottom: 2px;
+  margin-bottom: 3%;
+  background-color: var(--secondaryColor);
+
+}
+
+
+.collectionPerfume{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: inline-block;
+}
+
+.santalImg{
+width:100%;
+height: 50%;
+position: relative;
+padding-right: 3%;
+}
+
+.chanelImg{
+  width:100%;
+  height: 50%;
+  position: relative;
+  padding-right: 3%;
+  padding-left: 1%;
+}
+
+.byredoImg{
+  width:100%;
+  height: 50%;
+  position: relative;
+  padding-left: 4%;
+}
+
+.perfume1, .perfume2, .perfume3{
+  text-align: center;
+  width: 32%;
+  height: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+.perfume1{
+  margin-left: 1.5%;
+}
+
+.compName{
+  text-align: center;
+  color: #6c5b7b;
+  font-size: 1.7em;
+  font-style: oblique;
+}
+
+.frangranceName{
+  text-align: center;
+  color: white;
+  font-size: 1.8em;
+}
+
+.frangranceType{
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.frangrancePrice{
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.link{
+  background-color: #2d2d2d;
+  color:grey;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20%;
+}
+
+.link:hover{
+  background-color: hsl(0, 0%, 90%);
+  color: #2d2d2d;
+  box-shadow: 2px 2px 5px 3px hsl(0, 0%, 90%);
+}
+
+.perfume4, .perfume5, .perfume6{
+  text-align: center;
+  width: 32%;
+  height: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  margin-top: 0%;
+}
+
+.perfume4{
+  margin-left: 1.5%;
+  margin-top: 0;
+}
+
+
+.giftSetImg1{
+  width:100%;
+  height: 50%;
+  position: relative;
+  padding-right: 3%;
+
+}
+
+.giftSetImg2{
+  width:100%;
+  height: 50%;
+  position: relative;
+  padding-right: 3%;
+  padding-left: 1%;
+}
+
+.giftSetImg3{
+  width:100%;
+  height: 50%;
+  position: relative;
+  padding-left: 4%;
+}
+
+
+.modalWindow{
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: fixed;
+  background-color: rgba(150, 150, 150, 0.6);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modalWindow:target{
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease-in 1s;
+}
+
+.content{
+  width: 680px;
+  height: 570px;
+  background-color: white;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+}
+
+.close{
+  background-color: lightgray;
+  padding: 10px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.close:hover{
+  background-color: var(--secondaryColor);
+  color: white;
+}
+
+.info{
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  top: 10%;
+  overflow: hidden;
+
+}
+
+.byredoModal, .chanelModal, .santalModal{
+  padding-top: 6%;
+  width: 80%;
+  padding-right: 12%;
+  height: auto;
+  position: absolute;
+  left: -55px;
+}
+
+.p{
+  position: absolute;
+  width: 45%;
+  top: 8%;
+  right: 15px;
+  height: 70%;
+  font-size: 1em;
+  font-family: monospace;
+}
+
+.p i{
+  font-size: 1em;
+  font-family: monospace;
+  font-size: 2EM;
+  font-weight: bolder;
+}
+
+.compNameModal{
+  font-size: 2em;
+  font-family: monospace;
+  margin-bottom: 0;
+}
+
+.p span{
+  text-decoration: line-through;
+  font-size: 1.2em;
+  padding-right: 5px;
+}
+
+.p b{
+  color: red;
+  font-size: 1.8em;
+}
+
+.p hr{
+  width: 100%;
+  margin-top: 20px;
+}
+.add{
+  display: block;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 20%;
+  margin-bottom: 10px;
+  background-color: rgb(50,50,50);
+  text-align: center;
+  padding: 10px 0px;
+  color: lightgray;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.add:hover{
+  background-color: lightgray;
+  color: rgb(50,50,50);
+}
+
+
+.addedShopping {
+  margin-left: 5%;
+  padding-top: 1%;
+  width: 90%;
+  font-size: 1em;
+
+}
+.addedShopping p{
+  padding-left: 7.5%;
+}
+
+.addedShopping hr{
+  background-color: var(--secondaryColor);
+}
+
+.fragranceStory{
+  font-size: 1.35em;
+  font-weight: bolder;
+  color: #2d2d2d;
+  padding-right: 5px;
+}
+
+.details{
+  position: absolute;
+  top: 71.5%;
+  width: 100%;
+  background-color: var(--secondaryColor);
+}
+
+.detailsInfo{
+  font-size: 1em;
+  width: 93%;
+  padding-left: 8%
+}
+
+.details hr{
+  background-color: white;
+}
+
+.giftSetImg2Modal, .giftSetImg1Modal, .giftSetImg3Modal{
+  padding-top: 10%;
+  width: 51%;
+  padding-right: -10px;
+  height: 260px;
+  position: absolute;
+  left: 0px;
+}
+.giftSetImg1Modal{
+  padding-top: 1%;
+  height: 340PX;
+}
+
+.giftSetImg3Modal{
+  padding-top: 2%;
+  height: 300px;
+}
+
+
+.externalLinkContaner{
+  margin-top: 1%;
+  width: 100%;
+  display: inline-block;
+  height: 500px;
+  text-align: center;
+  background-color: #2d2d2d;
+  /* text-align: center; */
+}
+
+.linkSection{
+  color: white;
+  text-align: center;
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.linkSection1{
+  color: white;
+  text-align: center;
+  display: inline-block;
+  margin-right: 7%;
+  margin-left: 2%;
+}
+
+.linkSectionName{
+  font-style: normal;
+  font-size: 1.3em;
+  color: #fffada;
+}
+
+.externalLink{
+  display: block;
+  padding-top: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+}
+
+.externalLinkContaner hr{
+  margin-top: 2%;
+}
+
+.socialMediaSection{
+margin-left: 55%;
+display: block;
+color: white;
+
+}
+
+.socialMediaParag{
+  font-size: 1em;
+  display: block;
+}
+
+.socialMediaCompName{
+  color: #ffd700;
+  font-size: 1.1em;
+}
+
+.socialMediaIcon{
+width: 7%;
+height: auto;
+display: inline-block;
+margin-right: 7%;
+}
+
+
+.copyRight, .copyRight2{
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  margin: 2px;
+}
+
+.copyRight{
+  margin-top: 10%;
+}
+
+.toTop{
+  background-color: rgba(10,10,10,0.5);
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  position: fixed;
+  bottom: 20%;
+  right: 5%;
+  font-size: 1em;
+}
+
+.toTop a{
+  text-decoration:none;
+  color: white;
+  display: block;
+  padding:20%;
+}
+
+.toTop:hover{
+  box-shadow: 0px 0px 10px 3px black;
+}
+
+
+/* --- tablet or medium size view 450px-900px ---  */
+ @media only screen and (max-width: 900px)  and (min-width:450px){
+   .shoppingCartImg{
+     left: 0%;
+   }
+
+   .headerAnimation{
+     width:90%;
+     height: 400px;
+     margin-left: 5%;
+     margin-right: auto;
+     position: relative;
+     margin-bottom: 0;
+   }
+
+   .storeLabelImg{
+     width: 17%;
+     height: auto;
+     border-radius: 10%;
+     margin-bottom: 3%;
+     position: absolute;
+     margin-top: 2.5%;
+     animation: zoomLabel 3s 1;
+
+   }
+
+   .storeName{
+   font-family: 'Luxurious Roman', cursive;
+   font-size: 1.7em;
+     color: #2b2a2b;
+   display: inline-block;
+    margin-left: 20%;
+     margin-bottom: 0;
+     margin-top: 3%;
+     animation: storeNameAnimation 3s 1;
+   }
+
+   .tajStyle, .quoteSource{
+   font-family: 'Abril Fatface', cursive;
+   color: #f2c506;
+   font-size: 1.1em;
+   }
+
+   .quote{
+     display: inline-block;
+     font-size: 1.2em;
+     color: #5d5c61;
+     font-family: 'Dancing Script', cursive;
+     margin-left: 25%;
+     margin-top: 10px;
+     animation: quoteNameAnimation 3s 1;
+   }
+
+   .quoteSource{
+   font-size: 0.9em;
+   }
+
+   .imgText1{
+     top: 7%;
+     left: 47%;
+     width: 47%;
+     height: 22%;
+     color: white;
+     padding: -15px;
+     position: absolute;
+     font-family: cursive;
+     font-size: 1.5em;
+   }
+
+
+   .imgText2{
+     top: 15%;
+     left: 50%;
+     width: 35%;
+     height: 40%;
+     color: white;
+     position: absolute;
+     font-family: cursive;
+     font-size: 0.9em;
+     /* background-color: rgba(63, 70, 82,0); */
+     border: 1px solid grey;
+     background-color: rgba(63, 70, 82, 0.51);
+   }
+
+
+
+   .slideshow{
+     margin-top: 4.5%;
+     width: 85%;
+     height: 37px;
+     margin-left: auto;
+     margin-right: auto;
+     overflow: hidden;
+     text-align: center;
+   }
+   .slide-wrapper{
+     width: 300%;
+     height: 100%;
+     animation: slideshow 10s infinite;
+   }
+   .slide{
+     width: 33.33%;
+     height: 100%;
+     float: left;
+     padding-top: 5px;
+     text-align: center;
+
+     /* animation: slideshow4 15s infinite; */
+   }
+
+   .slide:nth-child(1){
+     color:#2d2d2d;
+     background-color: #2a363b;
+     font-size: 0.8em;
+     color: white;
+   }
+
+   .slide:nth-child(2){
+   color:#ffffff;
+   background-color: olive;
+   font-size: 0.8em;
+   }
+
+   .slide:nth-child(3){
+   padding-top: 12px;
+   color:#b1a296;
+   background-color: #5d5c61;
+   font-size: 0.8em;
+   }
+
+   .smallTitel{
+     padding-left: 7.5%;
+     font-family: 'Abril Fatface', cursive;
+     color: #f2c506;
+     font-size: 0.9em;
+     margin-top: 3%;
+   }
+
+
+   .collectionPerfume{
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+     position: relative;
+     display: inline-block;
+   }
+
+   .santalImg{
+   width:100%;
+   height: 37%;
+   position: relative;
+   padding-right: 3%;
+   }
+
+   .chanelImg{
+     width:100%;
+     height: 37%;
+     position: relative;
+     padding-right: 3%;
+     padding-left: 1%;
+   }
+
+   .byredoImg{
+     width:100%;
+     height: 37%;
+     position: relative;
+     padding-left: 4%;
+   }
+
+   .perfume1, .perfume2, .perfume3{
+     text-align: center;
+     width: 32%;
+     height: 470px;
+     margin-left: auto;
+     margin-right: auto;
+     display: inline-block;
+   }
+
+   .perfume1{
+     margin-left: 1.5%;
+   }
+
+   .compName{
+     text-align: center;
+     color: #6c5b7b;
+     font-size: 1.4em;
+     font-style: oblique;
+   }
+
+   .frangranceName{
+     text-align: center;
+     color: white;
+     font-size: 1.35em;
+   }
+
+   .frangranceType{
+     text-align: center;
+     font-size: 0.9em;
+   }
+
+   .frangrancePrice{
+     text-align: center;
+     font-size: 1.1em;
+   }
+
+   .link{
+     background-color: #2d2d2d;
+     color:grey;
+     text-decoration: none;
+     padding: 5px 10px;
+   }
+
+   .link:hover{
+     background-color: hsl(0, 0%, 90%);
+     color: #2d2d2d;
+     box-shadow: 2px 2px 5px 3px hsl(0, 0%, 90%);
+   }
+
+   .perfume4, .perfume5, .perfume6{
+     text-align: center;
+     width: 32%;
+     height: 500px;
+     margin-left: auto;
+     margin-right: auto;
+     display: inline-block;
+     margin-top: 0%;
+   }
+
+   .perfume4{
+     margin-left: 1.5%;
+     margin-top: 0;
+   }
+
+
+   .giftSetImg1{
+     width:100%;
+     height: 45%;
+     position: relative;
+     padding-right: 3%;
+
+   }
+
+   .giftSetImg2{
+     width:100%;
+     height: 45%;
+     position: relative;
+     padding-right: 3%;
+     padding-left: 1%;
+   }
+
+   .giftSetImg3{
+     width:100%;
+     height: 45%;
+     position: relative;
+     padding-left: 4%;
+   }
+
+   .modalWindow{
+     top: 0px;
+     bottom: 0px;
+     left: 0px;
+     right: 0px;
+     position: fixed;
+     background-color: rgba(150, 150, 150, 0.6);
+     opacity: 0;
+     pointer-events: none;
+   }
+
+   .modalWindow:target{
+     opacity: 1;
+     pointer-events: auto;
+     transition: ease-in 1s;
+   }
+
+   .content{
+     width: 530px;
+     height: 470px;
+     background-color: white;
+     margin: auto;
+     margin-top: 100px;
+     position: relative;
+   }
+
+   .close{
+     background-color: lightgray;
+     padding: 10px;
+     position: absolute;
+     top: 0px;
+     right: 0px;
+     text-decoration: none;
+     color: black;
+     font-weight: 600;
+   }
+
+   .close:hover{
+     background-color: var(--secondaryColor);
+     color: white;
+   }
+
+   .info{
+     width: 100%;
+     height: 60%;
+     position: absolute;
+     top: 10%;
+     overflow: hidden;
+
+   }
+
+   .byredoModal, .chanelModal, .santalModal{
+     padding-top: 6%;
+     width: 80%;
+     padding-right: 12%;
+     height: auto;
+     position: absolute;
+     left: -55px;
+   }
+
+   .p{
+     position: absolute;
+     width: 45%;
+     top: 3%;
+     right: 15px;
+     height: 70%;
+     font-size: 0.9em;
+     font-family: monospace;
+   }
+
+   .p i{
+     font-size: 0.9em;
+     font-family: monospace;
+     font-size: 1.9EM;
+     font-weight: bolder;
+   }
+
+   .compNameModal{
+     font-size: 2em;
+     font-family: monospace;
+     margin-bottom: 0;
+   }
+
+   .p span{
+     text-decoration: line-through;
+     font-size: 1.2em;
+     padding-right: 5px;
+   }
+
+   .p b{
+     color: red;
+     font-size: 1.8em;
+   }
+
+   .p hr{
+     width: 100%;
+     margin-top: 20px;
+   }
+   .add{
+     display: block;
+     margin-top: 20px;
+     margin-right: auto;
+     margin-left: auto;
+     width: 20%;
+     margin-bottom: 10px;
+     background-color: rgb(50,50,50);
+     text-align: center;
+     padding: 7px 0px;
+     color: lightgray;
+     text-decoration: none;
+     font-weight: bold;
+   }
+
+   .add:hover{
+     background-color: lightgray;
+     color: rgb(50,50,50);
+   }
+
+
+   .addedShopping {
+     margin-left: 5%;
+     padding-top: 1%;
+     width: 90%;
+     font-size: 0.9em;
+
+   }
+   .addedShopping p{
+     padding-left: 7.5%;
+   }
+
+   .addedShopping hr{
+     background-color: var(--secondaryColor);
+   }
+
+   .fragranceStory{
+     font-size: 1.20em;
+     font-weight: bolder;
+     color: #2d2d2d;
+     padding-right: 5px;
+   }
+
+   .details{
+     position: absolute;
+     top: 70%;
+     width: 100%;
+     background-color: var(--secondaryColor);
+   }
+
+   .detailsInfo{
+     font-size: 0.9em;
+     width: 93%;
+     padding-left: 8%
+   }
+
+   .details hr{
+     background-color: white;
+   }
+
+   .giftSetImg2Modal, .giftSetImg1Modal, .giftSetImg3Modal{
+     padding-top: 10%;
+     width: 51%;
+     padding-right: -10px;
+     height: 260px;
+     position: absolute;
+     left: 0px;
+   }
+   .giftSetImg1Modal{
+     padding-top: 4%;
+     height: 300PX;
+   }
+
+   .giftSetImg3Modal{
+     padding-top: 2%;
+     height: 280px;
+   }
+
+   .giftSetImg2Modal{
+     padding-top: 9%;
+     height: 200px;
+   }
+
+
+
+   .externalLinkContaner{
+     margin-top: 1%;
+     width: 100%;
+     display: inline-block;
+     height: 380px;
+     text-align: center;
+     background-color: #2d2d2d;
+     /* text-align: center; */
+   }
+
+   .linkSection{
+     color: white;
+     text-align: center;
+     display: inline-block;
+     margin-right: 3%;
+   }
+
+   .linkSection1{
+     color: white;
+     text-align: center;
+     display: inline-block;
+     margin-right: 3%;
+     margin-left: 2%;
+   }
+
+   .linkSectionName{
+     font-style: normal;
+     font-size: 1em;
+     color: #fffada;
+
+   }
+
+   .externalLink{
+     display: block;
+     padding-top: 5px;
+     text-decoration: none;
+     color: white;
+     font-size: 0.9em;
+   }
+
+   .externalLinkContaner hr{
+     margin-top: 2%;
+   }
+
+   .socialMediaSection{
+   margin-left: 55%;
+   display: block;
+   color: white;
+
+   }
+
+   .socialMediaParag{
+     font-size: 0.8em;
+     display: block;
+   }
+
+   .socialMediaCompName{
+     color: #ffd700;
+     font-size: 0.9em;
+   }
+
+   .socialMediaIcon{
+   width: 7%;
+   height: auto;
+   display: inline-block;
+   margin-right: 7%;
+   }
+
+
+   .copyRight, .copyRight2{
+     text-align: center;
+     font-size: 0.8em;
+     color: white;
+   }
+
+   .copyRight{
+     margin-top: 13%;
+   }
+
+   .toTop{
+     background-color: rgba(10,10,10,0.5);
+     border-radius: 50%;
+     height: 60px;
+     width: 60px;
+     text-align: center;
+     position: fixed;
+     bottom: 5%;
+     right: 5%;
+   }
+   .toTop a{
+     text-decoration:none;
+     color: white;
+     display: block;
+     padding:15%;
+   }
+   .toTop:hover{
+     box-shadow: 0px 0px 10px 3px black;
+   }
+
+}
+
+
+
+/* Desktop view */
+/* @media only screen and (min-width:900px){
+} */
+
+
+/* ---smartphone view small view --*/
+@media only screen and (max-width: 451px) {
+  .shoppingCartImg{
+    left: 5%;
+  }
+
+  .headerAnimation{
+    width:95%;
+    height: 250px;
+    margin-left: 2%;
+    margin-right: auto;
+    position: relative;
+    padding-bottom: 50px;
+  }
+
+  .storeLabelImg{
+    width: 15%;
+    height: auto;
+    border-radius: 10%;
+    margin-bottom: 3%;
+    position: absolute;
+    margin-top: 2%;
+    animation: zoomLabel 3s 1;
+    margin-left: 35px;
+  }
+
+  .storeName{
+  font-family: 'Luxurious Roman', cursive;
+  font-size: 1.2em;
+    color: #2b2a2b;
+  display: inline-block;
+   margin-left: 24%;
+    margin-bottom: 0;
+    margin-top: 10px;
+    animation: storeNameAnimation 3s 1 ;
+  }
+
+  .tajStyle,{
+  font-family: 'Abril Fatface', cursive;
+  color: #f2c506;
+  font-size: 1.4em;
+  margin-top: 55px;
+  }
+
+  .quote{
+  display: none;
+  }
+
+
+  @keyframes slideshow {
+    0%{margin-left: 0%;}
+    30%{margin-left: 0%;}
+      35%{margin-left: -100%;}
+      65%{margin-left: -100%;}
+        70%{margin-left: -200%;}
+        95%{margin-left: -200%;}}
+
+
+  @keyframes zoomLabel {
+    0%{transform: scale(0.2);}
+      75%{transform: scale(1.3);}
+            100%{transform: scale(1);}
+  }
+
+
+  @keyframes storeNameAnimation {
+    from{transform: translateY(-15px);}
+    to{transform: translateY(25px);}
+  }
+
+
+/*///////////////////
+Start Of slideshow
+///////////////////*/
+
+  .slideshow{
+    padding-top: 5px;
+    margin-top: 3%;
+    width: 90%;
+    height: 21px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+  }
+  .slide-wrapper{
+    width: 300%;
+    height: 100%;
+    animation: slideshow 10s infinite;
+  }
+  .slide{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    padding-top: 0px;
+    text-align: center;
+
+    /* animation: slideshow4 15s infinite; */
+  }
+
+  .slide:nth-child(1){
+    color:#2d2d2d;
+    background-color: #2a363b;
+    font-size: 0.65em;
+    color: white;
+  }
+
+  .slide:nth-child(2){
+  color:#ffffff;
+  background-color: olive;
+  font-size: 0.65em;
+
+  }
+
+  .slide:nth-child(3){
+  padding-top: 0px;
+  color:#b1a296;
+  background-color: #5d5c61;
+  font-size: 0.6em;
+  }
+
+  .promotionBigFont{
+
+  }
+
+  .freeShippingFont{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.1em;
+    text-shadow: 10px 0px 19px black;
+  }
+
+  .code{
+    font-style: italic;
+    font-weight: 100;
+  }
+
+  .offPrice{
+    font-weight: 900;
+    color: white;
+    font-size: 1.1em;
+    text-shadow: 10px 0px 25px white;
+
+  }
+
+  .promotionBigFont{
+    color: white;
+    font-size: 1.1em;
+    text-shadow: 10px 0px 25px white;
+  }
+
+  /*///////////////////
+  End Of slideshow
+  ///////////////////*/
+
+
+  /*///////////////////
+  Home Page Images
+  ///////////////////*/
+
+  .containerImg{
+    position: relative;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .mainImg1{
+    width: 94.8%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    filter: brightness(95%);
+  }
+
+  .mainImg2{
+    position: relative;
+    margin-top: 2%;
+    width: 94.8%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    filter: blur(1px);
+    filter: brightness(60%);
+  }
+
+  .imgText1{
+    top: 7%;
+    left: 47%;
+    width: 50%;
+    height: 22%;
+    color: white;
+    padding: -15px;
+    position: absolute;
+    font-family: cursive;
+    font-size: 1em;
+  }
+
+
+  .imgText2{
+    top: 25%;
+    left: 50%;
+    width: 35%;
+    height: 50%;
+    color: white;
+    position: absolute;
+    font-family: cursive;
+    font-size: 0.6em;
+    /* background-color: rgba(63, 70, 82,0); */
+    border: 1px solid grey;
+    background-color: rgba (240, 70, 82, 0.9);
+
+  }
+
+  /*///////////////////
+  Home Page Images END
+  ///////////////////*/
+
+
+  .smallTitel{
+    padding-left: 7.5%;
+    font-family: 'Abril Fatface', cursive;
+    color: #f2c506;
+    font-size: 0.8em;
+    margin-top: 3%;
+  }
+
+  hr{
+    width: 90%;
+    padding-bottom: 2px;
+    margin-bottom: 3%;
+    background-color: var(--secondaryColor);
+  }
+
+  /*///////////////////
+  Product Images START
+  ///////////////////*/
+
+  .collectionPerfume{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+  }
+
+  .santalImg{
+  width:70%;
+  height: 40%;
+  position: relative;
+  padding: 0px;
+  }
+
+  .chanelImg{
+    width:70%;
+    height: 40%;
+    position: relative;
+    padding: 0px;
+  }
+
+  .byredoImg{
+    width:70%;
+    height: 40%;
+    position: relative;
+    padding: 0px;
+  }
+
+  .perfume1, .perfume2, .perfume3{
+    text-align: center;
+    width: 80%;
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .compName{
+    text-align: center;
+    color: #6c5b7b;
+    font-size: 1em;
+    font-style: oblique;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .frangranceName{
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    margin-top: 5px;
+    margin-bottom: 9px;
+  }
+
+  .frangranceType{
+    text-align: center;
+    font-size: 1em;
+    margin-top: 5px;
+    margin-bottom: 7px;
+  }
+
+  .frangrancePrice{
+    text-align: center;
+    font-size: 1em;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .link{
+    background-color: #2d2d2d;
+    color:grey;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+
+  .link:hover{
+    background-color: hsl(0, 0%, 90%);
+    color: #2d2d2d;
+    box-shadow: 2px 2px 5px 3px hsl(0, 0%, 90%);
+  }
+
+  .perfume4, .perfume5, .perfume6{
+    text-align: center;
+    width: 80%;
+    height: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    margin-top: 0%;
+    margin-left: 10%;
+  }
+
+  .giftSetImg1{
+    width:70%;
+    height: 45%;
+    position: relative;
+    padding: 0;
+    padding-bottom: 7px;
+  }
+
+  .giftSetImg2{
+    width:70%;
+    height: 45%;
+    position: relative;
+    padding: 0;
+    padding-bottom: 7px;
+  }
+
+  .giftSetImg3{
+    width:70%;
+    height: 45%;
+    position: relative;
+    padding: 0;
+    padding-bottom: 7px;
+  }
+  /*///////////////////
+  Product Images END
+  ///////////////////*/
+
+  /*///////////////////
+  Modal Page START for Mobile
+  ///////////////////*/
+
+  .modalWindow{
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    background-color: rgba(150, 150, 150, 0.6);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .modalWindow:target{
+    opacity: 1;
+    pointer-events: auto;
+    transition: ease-in 1s;
+  }
+
+  .content{
+    width: 375px;
+    height: 410px;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+  }
+
+  .close{
+    background-color: lightgray;
+    padding: 5px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  }
+
+  .close:hover{
+    background-color: var(--secondaryColor);
+    color: white;
+  }
+
+  .info{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 8%;
+    overflow: hidden;
+
+  }
+
+  .byredoModal, .chanelModal, .santalModal{
+    padding-top: 10%;
+    width: 80%;
+    padding-right: 12%;
+    height: auto;
+    position: absolute;
+    left: -55px;
+  }
+
+  .p{
+    position: absolute;
+    width: 55%;
+    right: 0;
+    height: 80%;
+    top: 0px;
+    font-size: 0.85em;
+    font-family: monospace;
+  }
+
+  .p i{
+    font-size: 1em;
+    font-family: monospace;
+    font-size: 2EM;
+    font-weight: bolder;
+  }
+
+  .compNameModal{
+    font-size: 2em;
+    font-family: monospace;
+    margin-bottom: 0;
+  }
+
+  .p span{
+    text-decoration: line-through;
+    font-size: 1.2em;
+    padding-right: 5px;
+  }
+
+  .p b{
+    color: red;
+    font-size: 1.8em;
+  }
+
+  .p hr{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .add{
+    display: block;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 21%;
+    margin-bottom: 20px;
+    background-color: rgb(50,50,50);
+    text-align: center;
+    padding: 5px 3px;
+    color: lightgray;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.7em;
+  }
+
+  .add:hover{
+    background-color: lightgray;
+    color: rgb(50,50,50);
+  }
+
+  .addedShopping {
+    margin-left: 5%;
+    padding-top: 1%;
+    width: 90%;
+    font-size: 0.7em;
+  }
+
+  .addedShopping p{
+    padding-left: 8%;
+  }
+
+  .addedShopping hr{
+    background-color: var(--secondaryColor);
+  }
+
+  .fragranceStory{
+    font-size: 1.35em;
+    font-weight: bolder;
+    color: #2d2d2d;
+    padding-right: 5px;
+  }
+
+  .details{
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    background-color: var(--secondaryColor);
+  }
+
+  .detailsInfo{
+    font-size: 0.8em;
+    width: 93%;
+    padding-left: 8%
+  }
+
+  .details hr{
+    background-color: white;
+  }
+
+  .giftSetImg2Modal, .giftSetImg1Modal, .giftSetImg3Modal{
+    width: 55%;
+    padding-right: 12%;
+    height: 250px;
+    position: absolute;
+    left: 0px;
+  }
+
+  .giftSetImg1Modal{
+    padding-top: 3%;
+    height: 250px;
+  }
+
+  .giftSetImg3Modal{
+    padding-top: 3%;
+    height: 250px;
+  }
+
+  .giftSetImg2Modal{
+    padding-top: 17%;
+    height: 200px;
+  }
+
+  /*///////////////////
+  Modal Page END for Mobile
+  ///////////////////*/
+
+
+  .externalLinkContaner{
+    margin-top: 1%;
+    width: 100%;
+    display: inline-block;
+    height: 400px;
+    text-align: center;
+    background-color: #2d2d2d;
+    /* text-align: center; */
+  }
+
+  .linkSection{
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin-right: 4%;
+  }
+
+  .linkSection1{
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin-right: 3%;
+    margin-left: 2%;
+  }
+
+  .linkSectionName{
+    font-style: normal;
+    font-size: 1em;
+    color: #fffada;
+
+  }
+
+  .externalLink{
+    display: block;
+    padding-top: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+  }
+
+  .externalLinkContaner hr{
+    margin-top: 2%;
+  }
+
+  .socialMediaSection{
+  margin-left: 35%;
+  display: block;
+  color: white;
+
+  }
+
+  .socialMediaParag{
+    font-size: 0.8em;
+    display: block;
+  }
+
+  .socialMediaCompName{
+    color: #ffd700;
+    font-size: 0.7em;
+  }
+
+  .socialMediaIcon{
+  width: 7%;
+  height: auto;
+  display: inline-block;
+  margin-right: 7%;
+  }
+
+
+  .copyRight, .copyRight2{
+    text-align: center;
+    font-size: 0.6em;
+    color: white;
+  }
+
+  .copyRight{
+    margin-top: 17%;
+  }
+
+  .toTop{
+    background-color: rgba(10,10,10,0.5);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: right;
+    position: fixed;
+    bottom: 20%;
+    right: 5%;
+    font-size: 0.7em;
+  }
+
+  .toTop a{
+    text-decoration:none;
+    color: white;
+    display: block;
+    padding:24%;
+  }
+  .toTop:hover{
+    box-shadow: 0px 0px 10px 3px black;
+  }
+
+}
+
+
+ @media only screen and (min-width:1650px){
+   .copyRight{
+     margin-top: 7%;
+   }
+ }
+
+ @media screen and (max-width: 500px) {
+   .topNav a:not(:first-child) {display: none;}
+   .topNav a.icon {
+     float: right;
+     display: block;
+   }
+ }
+
+ @media screen and (max-width: 500px) {
+   .topNav.responsive {position: relative;}
+   .topNav.responsive .icon {
+     position: absolute;
+     right: 0;
+     top: 0;
+   }
+   .topNav.responsive a {
+     float: none;
+     display: block;
+     text-align: left;
+   }
+  
+ }
