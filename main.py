@@ -21,7 +21,7 @@ class Data(db.Model):
 
 @app.route("/")
 def hello():
-    return render_template('checkout.html')
+    return render_template('templates/checkout.html')
 
 @app.route('/',methods=['POST'])
 def thankyou():
