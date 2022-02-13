@@ -34,13 +34,6 @@
   })
 
   function item1(){
-    // infoButton.innerHTML = localStorage.getItem('btn_Name')
-    let btnText = 'Added to Cart'
-    localStorage.setItem('btn_Name',btnText)
-    count+=1;
-    localStorage.setItem('countNum',count)
-    infoButton.style.backgroundColor="green";
-
     let productName = 'Le Labo SANTAL 33'
     let productPrice = 289.00
     localStorage.setItem('product_Name',productName);
@@ -50,11 +43,7 @@
 
 
   function item2(){
-    // infoButton.innerHTML = localStorage.getItem('btn_Name')
-    let btnText = 'Added to Cart'
-    localStorage.setItem('btn_Name',btnText)
-    count+=1;
-    localStorage.setItem('countNum',count)
+  
     let productName = 'Chanel BLEU DE CHANEL'
     let productPrice = 132.00
     localStorage.setItem('product_Name',productName);
@@ -63,11 +52,7 @@
   }
 
   function item3(){
-    // infoButton.innerHTML = localStorage.getItem('btn_Name')
-    let btnText = 'Added to Cart'
-    localStorage.setItem('btn_Name',btnText)
-    count+=1;
-    localStorage.setItem('countNum',count)
+   
     let productName = 'Byredo BLACK SAFFRON'
     let productPrice = 270.00
     localStorage.setItem('product_Name',productName);
@@ -76,12 +61,7 @@
   }
 
   function item4(){
-    let infoButton = document.querySelector('.link');
-    // infoButton.innerHTML = localStorage.getItem('btn_Name')
-    let btnText = 'Added to Cart'
-    localStorage.setItem('btn_Name',btnText)
-    count+=1;
-    localStorage.setItem('countNum',count)
+  
     let productName = 'Hugo Boss BOSS BOTTLED'
     let productPrice = 75.00
     localStorage.setItem('product_Name',productName);
@@ -90,11 +70,7 @@
   }
 
   function item5(){
-      // infoButton.innerHTML = localStorage.getItem('btn_Name')
-    let btnText = 'Added to Cart'
-    localStorage.setItem('btn_Name',btnText)
-    count+=1;
-    localStorage.setItem('countNum',count)
+    
     let productName = 'Gucci GUILTY EDT'
     let productPrice = 119.00
     localStorage.setItem('product_Name',productName);
@@ -103,11 +79,7 @@
   }
 
   function item6(){
-    // infoButton.innerHTML = localStorage.getItem('btn_Name')
-    let btnText = 'Added to Cart'
-    localStorage.setItem('btn_Name',btnText)
-    count+=1;
-    localStorage.setItem('countNum',count)
+
     let productName = 'English Laundry NOIR CASTLE'
     let productPrice = 95.00
     localStorage.setItem('product_Name',productName);
