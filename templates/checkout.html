@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Checkout Page</title>
+    <style media="screen">
+      body{
+        background-color: #7395AE;
+        color:#2d2d2d;
+      }
+      h4,h2{
+        color: #2d2d2d;
+        font-size: 1.5em;
+      }
+
+      fieldset{
+        font-size:1.2em;
+        margin-top: 45px;;
+      }
+      span{
+        color: white;
+        font-size: 1.3em;
+        font-style: italic;
+      }
+
+      label{
+        font-size: 1.5em;
+        font-style: cursive;
+        position: relative;
+      }
+      label:nth-child(1){
+        margin-bottom: 15px;
+      }
+
+      .backHome{
+        text-decoration: none;
+        border: #7395AE 2px solid;
+        background-color: #2d2d2d;
+        color: aliceblue;
+        font-size: 1.5em;
+        padding: 7px;
+        position: relative;
+        top: 10px;
+        border-radius: 10%;
+      }
+
+      input{
+        padding: 7px; 
+        border-radius: 10%;       
+      }
+
+    </style>
+  </head>
+  <body>
+    <a href="../index.html" class="backHome">Continue Shopping</a>
+    <form class="" action="{{url_for('thankyou')}}" method="post">
+
+
+    <fieldset>
+      <legend>CHECKOUT</legend>
+      <h4>Items in your bag: </h4>
+      <h2>Perfume Name: <span id='displayInfo'> </span>
+      <br>
+       Price: $<span id="displayPrice"> </span></h2>
+
+      <hr>
+      <label for="name">Enter your name: <input type="text" name="userName" id="n" placeholder="Type your full name..."></label><br>
+      <label for="email">Enter your email: <input type="email" name="email" value="" placeholder="Type your email..."></label>
+      <br>
+      <label for="">Click Submit to complete  <input type="submit" name="" value="CLICK HERE" onclick="passvalue();"></label>
+
+      <script type="text/javascript">
+        let disName = document.querySelector('#displayInfo');
+        disName.innerHTML = localStorage.getItem('product_Name')
+        let disPrice = document.querySelector('#displayPrice');
+        disPrice.innerHTML = localStorage.getItem('product_Price')
+
+          function passvalue(){
+            let fullN = document.querySelector('#name').value;
+            localStorage.setItem('full_name',fullN);
+            let fullE = document.querySelector('#email').value;
+            localStorage.setItem('full_email',fullE);
+            return false;
+          }
+      </script>
+    </fieldset>
+  </form>
+
+  </body>
+</html>

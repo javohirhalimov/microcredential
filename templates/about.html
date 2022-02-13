@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="project.css" type="text/css">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  text-align: center;
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  text-align: center;
+  background-color: grey;
+
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: #f2c506;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.about{
+margin-top: -30px;
+font-size: 2.5em;
+font-family: 'Abril Fatface', cursive;
+}
+
+.storeName{
+  margin-left: -25px;
+  text-align: center;
+  margin-top: -45px;
+}
+.motivation{
+  font-family: 'Luxurious Roman', cursive;
+font-size: 1.1em;
+margin-top: 20px;
+margin-bottom: -10px;
+}
+
+@keyframes storeNameAnimation {
+  from{transform: translateX(-350px);}
+  to{transform: translatex(300px);}
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+@media screen and (min-width: 651px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-left: 25%;
+  }
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@700&family=Luxurious+Roman&display=swap" rel="stylesheet">
+
+<title>About Us</title>
+</head>
+<body>
+  <div class="topNav" id="myTopnav">
+    <a href="../index.html" class="active">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="checkout.html" class="shoppingLink"><img src="../images/bag.png" alt="" class="shoppingCartImg"><span class="numItem">  </span></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+<div class="about-section">
+  <h1 class="about">About Us</h1>
+  <p class="storeName"><span class="tajStyle">TAJ</span> Perfume Collection</p>
+  <p class="motivation">Our point is to make standard and extravagance scent moderate and open to all. We grandstand more than 130 aroma marks, which are all accessible for you to peruse online at your relaxation. Remember our breathtaking determinations in-store as well!</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+  <div class="column">
+    <div class="card">
+      <img src="../images/profile.jpg" alt="Javohir" style="width:100%">
+      <div class="container">
+        <h2>Javohir Halimov</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Your moment’s on us</p>
+        <p>javohirhalimov95@gmail.com</p>
+         <form action="mailto:javohirhalimov95@gmail.com" method="post" enctype="text/plain">
+         <p><input type="submit" name="" value="Contact"></input></p>
+        </form>
+      </div>
+    </div>
+
+<div class="copyRightDiv">
+  <p class="copyRight">&#169;2022 TAJ Perfume Collection by Javohir Halimov. &nbsp; All Rights Reserved.</p>
+  <p class="copyRight2">All information and materials used are for ONLY educational purposes.</p>
+</div>
+</body>
+</html>
