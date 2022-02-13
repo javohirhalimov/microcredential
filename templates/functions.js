@@ -1,15 +1,15 @@
 
 
 
-  var count = document.querySelector('.numItem')
-  var btn1 = document.querySelectorAll('a.add');
-  var infoButton = document.querySelectorAll('container.link')
-  buttonLength = btn1.length;
-  for(let i=0; i<buttonLength; i++){
-    btn1[i].addEventListener('click', function(){
-    alert("Item was added!")   
-    })
-  }
+//   var count = document.querySelector('.numItem')
+//   var btn1 = document.querySelectorAll('a.add');
+//   var infoButton = document.querySelectorAll('container.link')
+//   buttonLength = btn1.length;
+//   for(let i=0; i<buttonLength; i++){
+//     btn1[i].addEventListener('click', function(){
+//     alert("Item was added!")   
+//     })
+//   }
 
 
   function myFunction() {
